@@ -1,10 +1,11 @@
+"use client"
 import Productos from '../../components/Productos'
+import { useTimer } from '@/hooks/useTimer'
 
 
 const CatalogoPage = () => {
-  return (
-    <div className="flex justify-center items-center w-full h-[93vh]"><Productos/></div>
-  )
+  const {timer} = useTimer()
+  return (<Productos/>)
 }
 
 export default CatalogoPage
